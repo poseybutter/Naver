@@ -1,0 +1,326 @@
+@import "./reset.css";
+@import "./common.css";
+
+header .group-flex1 {
+  width: 1130px;
+  height: 160px;
+  position: relative;
+  margin: 0 auto;
+}
+
+header .logo {
+  position: absolute;
+  top: 50%;
+  left: -9px;
+  margin-top: -32px;
+}
+header .logo a::after {
+  content: "";
+  width: 222px;
+  height: 52px;
+  display: block;
+  background-position: 0 -158px;
+}
+
+.search-area {
+  position: absolute;
+  top: 50%;
+  left: 238px;
+  margin-top: -28px;
+}
+.search-area .search-box {
+  position: relative;
+  width: 582px;
+  height: 52px;
+  border: 2px solid #19ce60; /* old 브라우저에서 지원되게 하려고 작성 */
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.search-area .input-text {
+  width: 444px;
+  height: 24px;
+  padding: 13px 15px;
+  margin: 1px;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+  outline: 0; /* 텍스트 포커스 없애는 용도 */
+}
+.search-area .btn-submit {
+  width: 56px;
+  height: 56px;
+  background: #19ce60;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+.search-area .btn-submit::after {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-position: -420px 0;
+  vertical-align: top;
+}
+.search-area .btn-keyboard {
+  position: absolute;
+  top: 0;
+  right: 84px;
+  bottom: 0;
+  width: 36px;
+  z-index: 400;
+}
+.search-area .keyboard {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  background-position: -420px -402px;
+  margin: -6px 0 0 8px;
+}
+.search-area .btn-arrow {
+  position: absolute;
+  top: 0;
+  right: 64px;
+  bottom: 0;
+  width: 22px;
+}
+.search-area .ic-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -2px 0 0 5px;
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  background-position: -408px -100px;
+}
+
+.service-area {
+  position: absolute;
+  top: 12px;
+  right: -3px;
+}
+.service-area .bar {
+  float: left;
+  width: 1px;
+  height: 10px;
+  background: #e4e8eb;
+  margin: 3px 7px;
+}
+.service-area .link-start {
+  float: left;
+  font-size: 11px;
+}
+.service-area .link-start::after {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  vertical-align: top;
+  background-position: -308px -345px;
+  margin: -3px 0 0 3px;
+}
+.service-area .link-junior {
+  float: left;
+}
+.service-area .link-junior::after {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  vertical-align: top;
+  width: 60px;
+  height: 10px;
+  background-position: -262px -330px;
+  margin: 3px;
+}
+.service-area .link-junior:hover::after {
+  background-position: -200px -330px;
+}
+.service-area .link-bin {
+  float: left;
+  margin-left: 6px;
+}
+.service-area .link-bin::after {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 11px;
+  background-position: -369px -299px;
+  margin: 3px 2px 2px;
+}
+.service-area .link-bin:hover::after {
+  background-position: -380px -199px;
+}
+.group-flex2 {
+  border-top: 1px solid #e4e4e4;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+.group-flex2 .inner {
+  width: 1130px;
+  margin: 0 auto;
+}
+.group-flex2 .inner::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.gnb-area {
+  overflow: hidden;
+  float: left;
+}
+.gnb-area .gnb-list {
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  color: #19ce60;
+  line-height: 30px;
+  padding: 11px 0;
+  overflow: hidden;
+  letter-spacing: -0.3px;
+}
+.gnb-area .gnb-list a {
+  display: block;
+}
+.gnb-area .gnb-list .ic-mail {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-position: -420px -73px;
+  margin: 3px 9px 0 0;
+  /* 아이콘이랑 텍스트 정렬 */
+  vertical-align: top;
+}
+.gnb-area .gnb-list i.ic-shop {
+  width: 24px;
+  height: 20px;
+  background-position: -154px -389px;
+  display: block;
+  margin-top: 4px;
+}
+.gnb-area .gnb-list i.ic-shoplive {
+  width: 54px;
+  height: 20px;
+  background-position: -202px -299px;
+  display: block;
+  margin-top: 4px;
+}
+.gnb-area .gnb-list i.ic-tv {
+  display: inline-block;
+  width: 12px;
+  height: 14px;
+  background-position: -444px -49px;
+  margin: 9px 2px 0 0;
+  vertical-align: top;
+}
+.gnb-area .gnb-list.list02 {
+  margin-left: 12px;
+  color: #000;
+}
+.gnb-area .gnb-list::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.gnb-area .gnb-item {
+  float: left;
+}
+.gnb-area .gnb-item + .gnb-item {
+  margin-left: 12px;
+}
+.gnb-area .btn-more {
+  float: left;
+  margin-left: 17px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #202020;
+  text-align: right;
+  font-weight: normal;
+}
+.gnb-area .btn-more::after {
+  display: inline-block;
+  content: "";
+  width: 11px;
+  height: 7px;
+  background-position: -444px -339px;
+  margin-left: 4px;
+  vertical-align: 2px;
+}
+.weather-area {
+  float: right;
+  max-width: 270px;
+  overflow: hidden;
+}
+.weather-area .weather-info {
+  width: 100%;
+  padding: 12px 0 11px;
+  font-size: 13px;
+  line-height: 29px;
+  vertical-align: top;
+  display: inline-block;
+  overflow: hidden;
+}
+.weather-area .ic-weather::before {
+  content: "";
+  background-image: url(../images/ic-weather.png);
+  background-repeat: no-repeat;
+  background-size: 215px;
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+  background-position: -155px 0;
+  float: left;
+  margin-right: 9px;
+}
+.weather-area .current {
+  float: left;
+}
+
+.weather-area .current .num {
+  font-size: 15px;
+  font-weight: bold;
+}
+.weather-area .current .txt {
+  /* margin-left: 5px; */
+  font-weight: bold;
+}
+.weather-area .degree {
+  float: left;
+  margin-left: 9px;
+}
+.weather-area .degree .min {
+  color: #2586ee;
+}
+.weather-area .degree .max {
+  color: #e9564a;
+}
+.weather-area .degree .max::before {
+  content: "";
+  width: 5px;
+  height: 11px;
+  background-position: -444px -392px;
+  display: inline-block;
+}
+.weather-area .degree .location {
+  padding-left: 9px;
+  font-size: 12px;
+  color: grey;
+}
+
+/* after는 내 영역 마지막에서 적용 */
+.container {
+  width: 1130px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+/* ctrl+shift+1 */
+.container::after {
+  content: "";
+  clear: both;
+  display: block;
+}

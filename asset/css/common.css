@@ -1,0 +1,89 @@
+
+body{
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+.wrapper{
+    min-width: 1190px;
+}
+/* a태그여서 감쌀 수 없음 */
+.thumb{
+    display: block;
+    position: relative;
+}
+.thumb::after{
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: 1px solid #000;
+    opacity: 0.1;
+}
+.thumb img{
+    width: 100%;
+}
+.blind{
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+/* is 01 */
+header .logo a::after,
+header .service-area > a::after,
+.sc-news .group-issue .link-media::after,
+.sc-news .group-title .btn-set::after,
+header .search-area .btn-submit::after,
+header .search-area .keyboard,
+header .search-area .ic-arrow,
+header .gnb-area .gnb-list i,
+header .gnb-area .btn-more::after,
+.sc-sidenews .navi .btn-nav::after,
+header .weather-area .degree .max::before,
+.sc-news .group-title .link-stand::before,
+.sc-news .group-title .link-stand::after,
+.sc-login .sub-area::before,
+.sc-login .sub-area .link-join::before,
+.sc-news .group-list .btn-mdprev,
+.sc-themepost .btn-theme-setting::before,
+.sc-themepost .btn-theme.prev,
+.sc-themepost .btn-theme.next,
+.sc-themepost .list1-thumb .ic-play,
+.sc-themepost .list3 .list3-thumb .ic-play,
+.sc-themepost .list3 .fund-hd::after,
+.sc-themepost .list3 .fund-list .btn-next::after,
+.sc-themepost .btn-more .ico-more::before,
+.sc-login .link-login::before,
+footer .notice-area .more::after,
+footer .btn-top,
+footer .screen-mode{
+    background-image: url(../images/sp-bg.png);
+    background-repeat: no-repeat;
+    background-size: 457px;
+}
+
+
+/* is 02 */
+.sc-shop .group-goods .btn::before,
+.sc-shop .trend-shop::before,
+.sc-shop .trend-shop::after,
+.sc-shop .shopnews-hd .navi .prev::after,
+.sc-shop .shopnews-hd .navi .next::before,
+.sc-shop .group-cate .navi .prev::after,
+.sc-shop .group-cate .navi .next::after,
+.sc-shop .plusdeal-hd .prev::after,
+.sc-shop .plusdeal-hd .next::after{
+    background-image: url(../images/sp-bg2.png);
+    background-repeat: no-repeat;
+    background-size: 107px;
+}
+.sc-shop .plusdeal-hd .ic-plusdeal::before,
+.sc-shop .group-plusdeal .deal-list .thumb-box .ico-event,
+.sc-shop .group-plusdeal .deal-list .thumb-box.box02::before{
+    background-image: url(../images/ic-shop.png);
+    background-repeat: no-repeat;
+    background-size: 107px;
+}
